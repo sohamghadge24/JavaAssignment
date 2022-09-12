@@ -5,25 +5,38 @@ public class SumOfAllNumber {
         Scanner sc =new Scanner(System.in);
             int sum=0;
             System.out.println("1.Number of your choose");
-            System.out.println("2.Number in line");
+            System.out.println("2.Number in Sequence");
+            System.out.println("3.Number digits");
             System.out.print("Enter Number : ");
             int x = sc.nextInt();
             switch(x){
-                case 1:System.out.print("Enter how many number: ");
-                int a = sc.nextInt();
-                for(int i=0;i<a;i++){
-                    System.out.print("Enter  Number: ");
-                    int b = sc.nextInt(); 
-                    sum+=b;
-                }
-                System.out.println("Sum of Numbers is "+sum);
+                case 1:
+                        System.out.print("how many number: ");
+                        int a = sc.nextInt();
+                        for(int i=0;i<a;i++){
+                            System.out.print("Enter  Number: ");
+                            int b = sc.nextInt(); 
+                            sum+=b;
+                        }
+                        System.out.println("Sum of Numbers is "+sum);
                 break;
-                case 2:System.out.print("Enter starting Number: ");
-                int s = sc.nextInt();
-                System.out.print("Enter ending  Number: ");
-                int y = sc.nextInt();
-                sum(s,y);
-                
+                    
+                    
+                case 2:
+                        System.out.print("Enter starting Number: ");
+                        int s = sc.nextInt();
+                        System.out.print("Enter ending  Number: ");
+                        int y = sc.nextInt();
+                        sum(s,y);
+                        break;  
+                   
+                case 3:System.out.print("Enter  Number: ");
+                        int z = sc.nextInt();
+                        while(z!=0){
+                            sum+=(z%10);
+                            z=z/10;
+                        }
+                        System.out.println("Sum of Numbers is "+sum);
             }
     }
     
