@@ -4,7 +4,6 @@ public class PerfectNumber {
     public static void main(String[] args) {
         Scanner sc =new Scanner(System.in);
         int count=0;
-        int totalcount=0;
         PerfectNumber obj =new PerfectNumber();
         System.out.print("Enter lower limit: ");
         int a = sc.nextInt();
