@@ -8,18 +8,19 @@ public class AssignmentHome2 {
     int a,b;
     AssignmentHome2(){
         Scanner sc =new Scanner(System.in); 
-        System.out.print("Enter lower limit: ");
+        System.out.println("Enter Two number");
+        System.out.print("Enter number: ");
         int in1 = sc.nextInt();
-        System.out.print("Enter upper limit: ");
+        System.out.print("Enter number: ");
         int in2 = sc.nextInt();
         a=in1;
         b=in2;
-        main();
+        main1();
     }
-    void main(){
-        PerfectNumber obj =new PerfectNumber();
+    void main1(){
+       
         for(int i=lowerLimit(a,b);i<=upperLimit(a,b);i++){
-            count=obj.num(i,count);   //method call 
+            count=num(i,count);   //method call 
         }
         System.out.print("Perfect Number count : "+count); 
     }
