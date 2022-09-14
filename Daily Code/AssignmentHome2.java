@@ -14,12 +14,17 @@ public class AssignmentHome2 {
         int in2 = sc.nextInt();
         a=in1;
         b=in2;
+        main();
+    }
+    void main(){
         PerfectNumber obj =new PerfectNumber();
         for(int i=lowerLimit(a,b);i<=upperLimit(a,b);i++){
             count=obj.num(i,count);   //method call 
         }
         System.out.print("Perfect Number count : "+count); 
     }
+     
+    
     int upperLimit(int a,int b){
         if(a>b)
             return a;//greater 
