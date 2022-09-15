@@ -29,3 +29,13 @@ public class LabQus2 {
         LabQus2 x=new LabQus2(); 
     }
 }
+
+
+/*
+ *  output :
+ 0 Soham 0 Manager
+349 null 100000 null
+0 Aayush 0 Developer
+100 null 250000 null
+1002 soham 500000 Developer
+ */
