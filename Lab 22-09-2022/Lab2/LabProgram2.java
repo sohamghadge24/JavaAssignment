@@ -10,13 +10,13 @@ public class LabProgram2 extends Child2{
 }
 /*
 flow of code
-								    	parent 
-                        |
-           ______________________________           
-					|			  	    |               |
-			child1					child2				  child3
-			                  |
-									  labprogram2
+					            parent 
+                        				|
+           		  _______________________________________      
+			  |		     |                  |
+			child1		   child2	     child3
+			                     |
+					labprogram2
 
 */
 
