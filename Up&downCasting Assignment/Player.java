@@ -1,27 +1,20 @@
 package Assignment;
 
 public class Player {
-	String stadium,jersey;
 	
-	int fees;
-	Player(String stadium,String jersey,int fees ){
-		this.stadium=stadium;
-		this.fees=fees;
-		this.jersey=jersey;
+	Player(){
+		
 		System.out.println("Parent Constructor");
-		stadium();fees();jersey();
 	}
-	void stadium() {
+	void stadium(String stadium) {
 		System.out.println("Stadium :"+stadium);
 	}
-	void fees() {
+	void fees(int fees) {
 		System.out.println("Fees :"+fees);
 		}
-	void jersey() {
+	void jersey(String jersey) {
 		System.out.println("Jersey :"+jersey);
 	}
-	
-	
 	void match() {
 		System.out.println("Match");
 	}
