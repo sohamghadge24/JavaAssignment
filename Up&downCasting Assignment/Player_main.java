@@ -1,18 +1,20 @@
 package Assignment;
 
 public class Player_main {
-  //main 
 	public static void main(String[] args) {
 		//Player(String stadium,String jersey,int fees ){
 		//for football
-		Player ply1 =new Player("London Olympic Stadium","Emirates",400000);
-		if(ply1 instanceof Footballer) 
-			((Footballer)ply1).match();
-		
+		Player ply =new Player();
+		System.out.println();
+		//for Footballer
+		ply =new Footballer("London Olympic Stadium","Emirates",400000);
+		if(ply instanceof Footballer) 
+			((Footballer)ply).matchFootball();
+		System.out.println();
 		
 		//for Cricketer
-		Player ply2 =new Player("Wankhede Stadium","INDIAN",600000);
-		if(ply2 instanceof Cricketer) 
-			((Cricketer)ply2).match();
+		ply =new Cricketer("Wankhede Stadium","INDIAN",600000);
+		if(ply instanceof Cricketer) 
+			((Cricketer)ply).matchCricket();;
 	}
 }
