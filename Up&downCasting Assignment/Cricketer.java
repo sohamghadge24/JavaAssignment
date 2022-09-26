@@ -1,14 +1,19 @@
 package Assignment;
 
 public class Cricketer extends Player {
-
+	String stadium,jersey;
+	int fees;
 	Cricketer(String stadium, String jersey, int fees) {
-		super(stadium, jersey, fees);
+		this.stadium=stadium;
+		this.fees=fees;
+		this.jersey=jersey;
+		super.stadium(stadium);
+		super.jersey(jersey);
+		super.fees(fees);
 		// TODO Auto-generated constructor stub
-		
 	}
-	@Override 
-	void match() {
+	Cricketer(){}
+	void matchCricket() {
 		System.out.println("Cricketer");
 		batBall();
 	}
