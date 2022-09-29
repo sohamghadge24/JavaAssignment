@@ -32,3 +32,21 @@ public class Polymorphism_main {
 			
 	}
 }
+/*
+output:
+	WebPage
+
+	HomePage
+	AboutPage
+	product related detail and feedback
+
+	ProductPage
+	Product1
+	Product2
+	Product3
+	Product4
+
+	Contactpage
+	Contact : 099-999-444
+	email : xyz@gmail.com
+	*/
