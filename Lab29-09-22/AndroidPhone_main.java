@@ -11,3 +11,15 @@ public class AndroidPhone_main {
 		arr[2]=new AndroidPhone("Samsung", 6 ,"white");
 	}
 }
+
+/*
+output: 
+	Apple is having 8 Hardware
+	Apple is having Space Gray Hardware
+
+	MI is having 6 Hardware
+	MI is having Black Hardware
+
+	Samsung is having 6 Hardware
+	Samsung is having white Hardware
+	*/
