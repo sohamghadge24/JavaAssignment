@@ -1,7 +1,7 @@
 package labPractical;
 
 //Quest3
-public class Polymorphism_main {
+public class AndroidPhone_main {
 	public static void main(String[] args) {
 		//String name,int ram,String color
 		
