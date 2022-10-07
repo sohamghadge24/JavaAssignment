@@ -1,6 +1,6 @@
 package Assignment2;
 
-public class SwappingOfNumber {                       //Question 3
+public class SwappingOfNumber {
 	public static void main(String[] args) {
 		SwappingOfNumber obj =new SwappingOfNumber();
 		obj.ForDouble(200);
@@ -14,18 +14,18 @@ public class SwappingOfNumber {                       //Question 3
 	}
 	
 	void ForDouble(double a){
-		System.out.println("integers: "+a);
+		System.out.println("Double: "+a);
 		int b=(int) a;
-		System.out.println("Swapping with Double :"+b +"\n");
+		System.out.println("Swapping with integers:"+b +"\n");
 		}
 }
 
 /*
 output:
-      integers: 200.0
-      Swapping with Double :200
+	Double: 200.0
+	Swapping with integers:200
 
-      integers: 100
-      Swapping with Double :100.0
+	integers: 100
+	Swapping with Double :100.0
 
 */
