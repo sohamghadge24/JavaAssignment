@@ -40,3 +40,18 @@ public class StringManipulation {
 		
 	}
 }
+
+/*
+output:
+
+	a==b is not equal
+	a is not equal b
+	SohamSoham
+	Soham
+	[Ljava.lang.String;@1cd072a9
+	h
+	0
+	m
+
+*/
+
