@@ -1,0 +1,61 @@
+create database db2;
+use db2;
+create table STUDENT1(Sr_No int, Sname varchar(10), course varchar(10), batch varchar(10), m1 int ,m2 int , m3 int , total int , Aveg int , Result varchar(4)); 
+
+INSERT INTO STUDENT1 values (1 , 'Surya' , 'SQL' , 'MOR' , 65 , 66 , 70 , Null , Null, Null);
+INSERT INTO STUDENT1 values (2, 'Neha' , 'JAVA' , 'EVE' , 45 , 35 , 56, Null,Null,Null);
+INSERT INTO STUDENT1 values (3, 'Joshi' , 'JAVA' , 'MOR' , 23, 90, 90, Null,Null,Null);
+INSERT INTO STUDENT1 values (4, 'Varun' , 'C-LANG' , 'MOR' , 78, 90, 99, Null,Null,Null);
+INSERT INTO STUDENT1 values (5, 'Sasi' , 'SQL' , 'EVE' , 88, 90, 90, Null,Null,Null);
+INSERT INTO STUDENT1 values (6, 'Shweta' , 'SQL' , 'EVE' , 56, 45, 45, Null,Null,Null);
+desc Table STUDENT1;
+drop table STUDENT1;
+Select * from STUDENT1;
+/*
+1)WRITE A QUERY TO UPDATE TOTAL BASED ON M1+M2+M3,AVG BASED ON TOTAL/3,RESULT BASED ON M1>40 AND M2>40 ANDM3>40 TO SET ‘PASS’ OTHERWISE ‘FAIL’.
+*/
+update STUDENT1 set total =(m1+m2+m3),Aveg=(total/3),result=(if(m1>40 and m2>40 and m3>40, "Pass", "fail") ) ;
+
+/*
+2)WRITE A QUERY TO UPDATE SNAMES FOR SNO IS 1 AND 5.
+*/
+update STUDENT1 set sname = 'Sasi' where Sr_No = 1;
+update STUDENT1 set sname = 'Surya' where Sr_No = 5;
+
+/*
+3)WRITE A QUERY TO SELECT ALL STUDENTS DETAILS RESULT IS ‘PASS’ AND
+COURSE SHOULD BE EQUAL TO ‘SQL’?
+*/
+UPDATE STUDENT1 SET result = 'pass', course = 'MySQL' ;
+
+
+/*
+4)WRITE A QUERY TO SELECT WHICH STUDENTS MARKS BELOW 75 AND ABOVE
+50.
+*/
+select m1,m2,m3 from STUDENT1 where (m1 >= 50 && m1 <=75)||(m2 >= 50 && m2 <=75)||(m3 >= 50 && m3 <=75);
+
+/*
+5)WRITE A QUERY TO SELECT ALL STUDENTS WHICH NAME STARTS WITH ‘S’
+LETTER AND ENDS WITH ‘A’?
+*/
+select * from STUDENT1 where Sname ='S' and '&a';
+
+/*
+6)WRITE A QUERY TO GET ALL STUDENTS DETAILS WHICH STUDENT COURSE
+IS ‘JAVA’,’CLANG’?
+*/
+select sname from STUDENT1 where course = 'JAVA' && 'C-LANG';
+
+/*
+7)WRITE A QUERY TO GET ALL COURSE DETAILS WHICH COURSE IS RUNNING
+IN ‘MOR’ AND ‘EVE’ BATCHES?
+*/
+select course from STUDENT1 where batch = 'MOR' && 'EVE';
+
+/*
+8)WRITE A QUERY TO GET COURSE DETAILS WHICH COURSE IS ONLY ‘MOR’
+BUT NOT IN ‘EVE’ BATCH?
+*/
+
+select course from STUDENT1 where batch = 'MOR' != 'EVE';
