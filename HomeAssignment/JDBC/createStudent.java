@@ -49,3 +49,36 @@ public class createStudent {
 		
 	}
 }
+/*
+output:
+Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+Enter Student Name:
+Soham
+Enter sid:
+123
+Enter marks:
+90
+1 records created
+Do u want to insert or elements: y/n
+y
+Enter Student Name:
+Ayush
+Enter sid:
+321
+Enter marks:
+89
+1 records created
+Do u want to insert or elements: y/n
+y
+Enter Student Name:
+Priya
+Enter sid:
+
+432
+Enter marks:
+89
+1 records created
+Do u want to insert or elements: y/n
+n
+
+*/
