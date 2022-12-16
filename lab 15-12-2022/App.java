@@ -49,8 +49,8 @@ public class App
       if(i==2){
         //update
        
-        Query query = session.createQuery("update Applicant set mark=:mark where SId=:SId");
-        query.setParameter("age", 30);
+        Query query = session.createQuery("update Student set mark=:mark where SId=:SId");
+        query.setParameter("mark", 30);
         query.setParameter("id", 1);
         // Begin transaction
         Transaction t = session.beginTransaction();
@@ -60,6 +60,40 @@ public class App
         System.out.println("No of rows updated: "+result);
       }
       
-      
+        if(i==3)
+        {
+            //select
+        @SuppressWarnings("rawtypes")
+        Query query = session.createQuery("from Student");
+        List<Student> list = query.getResultList();
+        System.out.println("Number of Student present--> "+list.size());
+        for (Applicant applicant : list) {
+           
+            System.out.println(applicant.getSId());
+            System.out.println(applicant.getName());
+        }}
+      if(i==4){
+          //
+       Query query = session.createQuery("update Applicant set age=:age where id=:id");
+        query.setParameter("age", 30);
+        query.setParameter("id", 1);
+        // Begin transaction
+        Transaction t = session.beginTransaction();
+        int result = query.executeUpdate();
+        // Commit the transaction and close the session
+        t.commit();
+        System.out.println("No of rows updated: "+result);
+       }
+        if(i==5){
+            //delete
+        Query query = session.createQuery("delete from Student where id=:id");
+        query.setParameter("id", 1);
+        // Begin transaction
+        Transaction t = session.beginTransaction();
+        int result = query.executeUpdate();
+        // Commit the transaction and close the session
+        t.commit();
+        System.out.println("No of rows Deleted: "+result);
+       }
 }
 
