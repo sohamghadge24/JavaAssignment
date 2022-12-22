@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css</title>
+    <style>
+        body{
+          background-color: rgb(51,51,51);
+        color: rgb(255, 154, 3);
+        background-image: url("https://r1.ilikewallpaper.net/ipad-pro-wallpapers/download-104394/blue-dark-yellow-abstract-artistic-4k_2048x2048.jpg");
+       
+   
+        }
+        .box{
+           
+            width: 70%;
+            margin: 3% auto;
+            
+            font-size: 25px;
+            align-items: center;
+        }
+         .OutBox{
+            font-size: 19px;
+           
+            border-radius: 5px;
+            width: 90%;
+            padding: 10px;
+            margin: 3% auto;
+            display:block;
+          
+        }
+        input{
+            margin: 1.6% auto;
+            text-align: center;
+            width: 25%;
+            padding: 10px 10px 10px 10px ;
+            color: black;
+            background-color: rgb(255, 154, 3);
+            border: solid 1px rgb(255, 154, 3);
+            border-radius: 20px;
+        }
+        input[type=radio] {
+        accent-color: rgb(255, 154, 3);
+        width: 5%;
+        }
+        input[type=checkbox] {
+        accent-color: rgb(255, 154, 3);
+        width: 5%;
+        }
+        input[type=button] {
+        accent-color: rgb(255, 154, 3);
+            margin-left: 3%;
+            margin-right: 3%;
+        }
+        input[type=submit] {
+        accent-color: rgb(255, 154, 3);
+        margin-left: 3%;
+            margin-right: 3%;
+        }
+        select{
+          background-color: rgb(51,51,51);  
+          text-align: center;
+          padding: 10px 10px 10px 10px ;
+          width: 25%;
+          
+          color: rgb(255, 154, 3);
+            border: solid 1px rgb(255, 154, 3);
+            border-radius: 20px;
+        }
+        label{
+           margin-left: 3%;
+        }
+        #part{
+            padding-top: 10% ;
+            display:flex;
+            border: solid 3px rgb(255, 250, 250);
+        }
+        #title{
+            font-size: 30px;
+            font-family:Papyrus,Fantasy ;
+        }
+    </style>
+</head>
+<body>
+    
+   <div class="box">
+
+    <span id="title">
+        Student Registration
+    </span>
+   
+    <div class="OutBox">
+        <form>
+            
+            <label for="id">SId :</label>
+            <input type="text" placeholder="000" id="sid" name="id">
+    
+            <label for="id">Sname :</label>
+            <input type="text" placeholder="Soham" id="sid" name="id"><br>
+            
+            <label for="email">Email-add :</label>
+            <input type="email" placeholder="abc@gmail.com"> <br>
+            <label for="gender">Gender :-</label>
+            <label for="male">male</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="female">female</label>
+            <input type="radio" id="female" name="gender" value="female"><br>
+        
+            <label for="id">Payment :- </label>
+            <label for="fullPym">Full Payment</label>
+            <input type="checkbox" id="male" name="Payment" value="full_Payment">
+            <label for="halfPym">installment(1 and 2)</label>
+            <input type="checkbox" id="female" name="Payment" value="part_Payment"><br>
+            
+            <label for="marks">Marks :-</label><br>
+            <label for="m1">M1 :</label>
+            <input type="text" placeholder="00" id="m1" name="m1" >
+            <label for="m2">M2 :</label>
+            <input type="text" placeholder="00" id="m2" name="m2" ><br>
+
+            <label for="total">Total: </label>
+            <input type="text" for="total_Marks" id="total_marks"></input>
+            <label for="avg">Avg : </label>
+            <input type="text" for="avg_Marks" id="avg_marks"></input><br>
+            
+
+
+            <div id="courses">
+                <label for="Courses">Choose a courses:</label>
+                <select name="courses" id="course">
+              <option value="JAVA">JAVA</option>
+              <option value="PYTHON">PYTHON</option>
+              <option value="C">C</option>
+              <option value="C++">C++</option>
+            </select>
+            </div><br>
+            
+
+           <input type="button" value="Avg">
+           <input type="button" value="total">
+           <input type="submit">
+            
+        </form>
+    </div>
+    
+   </div>
+</body>
+</html>
