@@ -1,0 +1,10 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+    background-color: rgb(51,51,51);
+    color: rgb(255, 154, 3);
+    background-image: url("https://r1.ilikewallpaper.net/ipad-pro-wallpapers/download-104394/blue-dark-yellow-abstract-artistic-4k_2048x2048.jpg");
+   
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

@@ -1,0 +1,25 @@
+<span class="box" style="float: left; height: 200px;">
+    <span><app-home></app-home></span>
+   
+</span>
+<span class="box" style="float: right;  height: 200px;"><span><app-aboutus></app-aboutus></span></span>
+<span class="box" style=" height: 200px;">
+    <span><app-contactus></app-contactus></span>
+</span>
+<div class="box" style=" height: 300px;">
+    <h3>Calculator</h3>
+
+    <input type="number" name="num1" placeholder="num1" [(ngModel)]="num1">
+    <input type="number" name="num2"placeholder="num2" [(ngModel)]="num2">
+    <br>
+    <h5>Operation</h5>
+    <button (click)="add()">Add</button>
+    <button (click)="sub()"> Sub</button>
+    <button (click)="mult()">Multi</button>
+    <button (click)="div()">div</button>
+    <br>
+    <h5>Result</h5>
+    <h4>{{num3}}</h4>
+</div>
+
+
